@@ -10,5 +10,5 @@ $(document).ready(function() {
         clearInterval(set1);
         $('hr').addClass('done');
       }
-    }, 25);  
+    }, 15);  
   });
