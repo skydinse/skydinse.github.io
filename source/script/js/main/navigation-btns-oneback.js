@@ -9,20 +9,20 @@
   }
 
   function team() {
-  location.replace("./team.html ")
+  location.replace("../team.html ")
   }
   function contact() {
-    location.replace("./contact.html ")
+    location.replace("../contact.html ")
   }
   function home() {
-    location.replace("./home.html")
+    location.replace("../home.html")
   }
   function faq() {
-    location.replace("./faq/faq.html ")
+    location.replace("./faq.html ")
   }
   function rules() {
-    location.replace("./rules.html ")
+    location.replace("../rules.html ")
   }
   function link() {
-    location.replace("./links.html ")
+    location.replace("../links.html ")
   }
