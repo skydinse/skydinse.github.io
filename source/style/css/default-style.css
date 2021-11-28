@@ -249,7 +249,7 @@ a:hover {
   border: 0px;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
+  font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
   -webkit-transition-duration: 0.6s; 
@@ -267,7 +267,7 @@ a:hover {
   text-decoration: none;
   z-index: 0;
   display: inline-block;
-  font-size: 15px;
+  font-size: 19px;
   margin: 4px 2px;
   cursor: pointer;
   -webkit-transition-duration: 0.6s; 
