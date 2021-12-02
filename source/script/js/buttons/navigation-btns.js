@@ -29,3 +29,6 @@
   function buttonevent() {
     location.replace("./event.html")
   }
+  function eventbtn() {
+    location.replace("./events.html")
+  }
