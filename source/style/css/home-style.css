@@ -376,12 +376,12 @@ a:hover {
   right: 0;
   z-index: 2;
   bottom: 0;
-  font-size: 18px;
   text-align: center;
   padding: 1rem 2rem;
   background: #34637e;
   transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
 }
+
 .info-box--hide {
   opacity: 0;
   bottom: -100%;
@@ -523,10 +523,11 @@ a:hover {
   padding: 6px 15px;
   display: flex;
   z-index: 1;
+  height: 7%;
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(rgba(44, 163, 218, 0.918), rgba(35, 70, 168, 0.918));
-  border-radius: 50px;
+  border-radius: 55px;
   transition-duration: 0.3s;
 }
 

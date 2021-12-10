@@ -8,6 +8,11 @@
                 "https://is.gd/I5Zcp2", "_blank");
   }
 
+  function info() {
+    window.open(
+                "./else/info.html", "_blank");
+  }
+
   function support() {
   location.replace("./help/support.html ")
   }
