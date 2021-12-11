@@ -406,6 +406,11 @@ a:hover {
   background-color: rgba(43, 82, 207, 0.377);
 }
 
+.tt {
+  height: 2000px;
+  background-color: white;
+}
+
 .red {
   background-color: rgba(204, 26, 26, 0.568);
 }
@@ -434,6 +439,10 @@ a:hover {
   content: "\2212";
 }
 
+video {
+  border-radius: 30px;
+}
+
 .content {
   padding: 0 18px;
   max-height: 0;
@@ -448,6 +457,22 @@ a:hover {
 .content:hover {
   border-radius: 9%;
   background-color: #7f848a2c;
+}
+
+.content-tt {
+  padding: 0 18px;
+  max-height: 0;
+  font-size: 12px;
+  overflow: hidden;
+  border-radius: 7%;
+  transition: max-height 0.2s ease-out;
+  transition-duration: 0.35s;
+  background-color: white;
+}
+
+.content-tt:hover {
+  border-radius: 9%;
+  background-color: white;
 }
 
 .info-banner {
