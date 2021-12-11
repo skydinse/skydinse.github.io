@@ -459,7 +459,7 @@ a:hover {
   padding: 6px 15px;
   display: flex;
   z-index: 1;
-  height: 7%;
+  height: 5%;
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(rgba(44, 163, 218, 0.918), rgba(35, 70, 168, 0.918));
@@ -470,6 +470,7 @@ a:hover {
 .info-banner:hover {
   left: 5%;
   right: 5%;
+  height: 7;
   width: 90%;
   padding: 5px 14px;
   background: linear-gradient(rgb(44, 114, 218), rgb(13, 50, 151));
@@ -484,7 +485,7 @@ a:hover {
   background: black;
   background-color: #5e565670;
   font-size: 100%;
-  width: 5%;
+  width: auto;
   border-radius: 20px;
   transition-duration: 0.5s;
   cursor: pointer;
@@ -495,6 +496,6 @@ a:hover {
   border: 7px;
   font-size: 120%;
   transition-duration: 0.5s;
-  width: 7%;
+  width: auto;
   border-radius: 40px;
 }
