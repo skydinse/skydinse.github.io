@@ -504,7 +504,7 @@ video {
 }
 
 .info-banner-close {
-  height: 30px;
+  height: auto;
   border: 5px;
   z-index: 1;
   background: black;
@@ -517,7 +517,7 @@ video {
 }
 
 .info-banner-close:hover {
-  height: 40px;
+  height: auto;
   border: 7px;
   font-size: 120%;
   transition-duration: 0.5s;

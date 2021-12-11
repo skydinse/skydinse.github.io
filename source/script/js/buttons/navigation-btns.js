@@ -31,8 +31,8 @@
   function link() {
     location.replace("./docs/about/links.html ")
   }
-  function buttonevent() {
-    location.replace("./else/event.html")
+  function citybuild() {
+    location.replace("./else/citybuild.html")
   }
   function eventbtn() {
     location.replace("./docs/ingame/events.html")
