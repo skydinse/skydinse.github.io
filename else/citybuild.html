@@ -59,40 +59,95 @@
         <div><object style="width: 100%; height: 800px;" data="../comments/cb-comments.html"></object></div>
         
       </div>
+    
+    <style>
+      .copybtn {
+        border: none;
+        padding: 1px 1px;
+        border-radius: 5px;
+        background-color: rgba(101, 132, 150, 0.596);
+        border: 0px;
+        font-size: 16.8px;
+        font-family: monospace;
+        margin: 3px 1px;
+      }
+      .copybtn:hover {
+        border: none;
+        padding: 2px 2px;
+        border-radius: 8px;
+        background-color: rgba(101, 132, 150, 0.596);
+        border: 0px;
+        font-size: 18px;
+        font-family: monospace;
+        margin: 3px 1px;
+      }
+    </style>
 
     <button class="collapsible">&#187; CityBuild - Grundkenntnise</button>
       <div class="content">
-        <h2 style="text-align: center;">Grundkentnisse</h2><br />
-        
-        <p>-- coming soon --</p>
-        
-      </div>
-    
-    <button class="collapsible">&#187; CityBuild - Wo ist Was?</button>
-      <div class="content">
-        <h2 style="text-align: center;">Grundkentnisse</h2><br />
-        
-        <p>-- coming soon --</p>
+        <h2 style="text-align: center;">Grundkentnisse</h2>
+        <p style="text-align: center; font-size: 15.5px;">Tipp: Du kannst auf Befehle klicken, um sie zu kopieren.</p><br />
+
+        <h3>Plot-Befehle:</h3>
+        <p>
+
+          <li>Mit dem Befehl <input type="text" value="/p auto" id="p_auto"><button class="copybtn" onclick="p_auto()">/p auto</button> (oder /p a) kannst du dir ein zufälliges Grundstück geben lassen. (du kannst maximal vier grundstücke besitzen)</li><br />
+          <li>Mit dem Befehl <input type="text" value="/p claim" id="p_claim"><button class="copybtn" onclick="p_claim()">/p claim</button> (oder /p c) kannst du dir das Grundstück holen, auf dem du gerade stehst. (natürlich nur, wenn es noch niemand anderem gehört)</li><br />
+          <li>Mit dem Befehl <input type="text" value="/p home" id="p_home"><button class="copybtn" onclick="p_home()">/p home</button> (oder /p h) kannst du dich zu deinem eigenen Plot teleportieren.</li><br />
+          
+        </p>
+
+        <h3>Weitere Grundlagen:</h3>
+        <p>
+
+          <li>Mit dem Befehl <input type="text" value="/spawn" id="spawn"><button class="copybtn" onclick="spawn()">/spawn</button> kannst du dich zum Spawn teleportieren. Mit /spawn kannst du auch die Wildnis (Farmwelt) wieder verlassen.</li><br />
+          <li>Mit dem Befehl <input type="text" value="/wildnis" id="wildnis"><button class="copybtn" onclick="wildnis()">/wildnis</button> kannst du dich direkt zum Wildnis-Teleporter begeben.</li><br />
+          
+        </p>
+
+        <h4>Falls du weitere Hilfe zu bestimmten Befehlen brauchst, frag einfach im Ingame-Chat nach!</h4>
         
       </div>
     
     <button class="collapsible">&#187; CityBuild - Weitere Befehle</button>
       <div class="content">
-        <h2 style="text-align: center;">Grundkentnisse</h2><br />
+        <h2 style="text-align: center;">Weitere Befehle</h2>
+        <p style="text-align: center; font-size: 15.5px;">"Die Programmiererin war zu faul, aber vielleicht kann man die Befehle irgendwann mal auch durch klicken kopieren."</p><br />
+
+        <h3>Plots:</h3>
+        <p>
+
+          <li>Spieler*in auf deinem Plot adden (die Person kann danach immer auf deinem Plot bauen, wenn du online bist): <input type="text" value="/p add " id="p_add"><button class="copybtn" onclick="p_add()">/p add [name]</button></li><br />
+          <li>Spieler*in auf deinem Plot trusten (die Person kann danach immer auf deinem Plot bauen, auch wenn du nicht online bist): <input type="text" value="/p trust " id="p_trust"><button class="copybtn" onclick="p_trust()">/p trust [name]</button></li><br />
+          <li>Spieler*in von deinem Plot kicken (die Person wird, falls sie sich auf deinem Plot befindet, sofort zurück zum Spawn teleportiert): <input type="text" value="/p kick " id="p_kick"><button class="copybtn" onclick="p_kick()">/p kick [name]</button></li><br />
+          <li>Spieler*in von deinem Plot bannen (die Person kann dein Grundstück nie wirder betreten): <input type="text" value="/p deny " id="p_deny"><button class="copybtn" onclick="p_deny()">/p deny [name]</button></li><br />
+          <br />
+          <li>Spieler*in von deinem Plot entfernen (alles, was in deinen Plot-Einstellungen die Person betrifft, wird zurückgestetzt. Das heißt wer gebannt ist wird entbannt, wer getrustet ist wird enttrusted und so weiter): <input type="text" value="/p remove " id="p_remove"><button class="copybtn" onclick="p_remove()">/p remove [name]</button></li><br />
+          
+        </p>
+
+        <h4>-- weitere Befehle folgen bald --</h4>
+        
+      </div>
+
+    <button class="collapsible">&#187; CityBuild - Auktionshaus & Adminshop</button>
+      <div class="content">
+        <h2 style="text-align: center;">Auktionshaus & Adminshop</h2><br />
         
         <p>-- coming soon --</p>
         
       </div>
-    
+
     <button class="collapsible">&#187; CityBuild - Shopkisten</button>
       <div class="content">
-        <h2 style="text-align: center;">Grundkentnisse</h2><br />
+        <h2 style="text-align: center;">Shopkisten</h2><br />
         
         <p>-- coming soon --</p>
         
       </div>
 
     <script src="../source/script/js/main/collapsible.js"></script>
+    <script src="../source/script/js/copy/copy-cb.js"></script>
     ⠀
     <hr>
   </body>
