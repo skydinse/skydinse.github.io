@@ -84,6 +84,7 @@ button {
   z-index: 0;
   color: rgb(247, 247, 247);
   padding: 3px 9px;
+  z-index: 1;
   text-align: center;
   border-radius: 6px;
   border: 0px;
@@ -222,7 +223,7 @@ a:hover {
   vertical-align: middle;
   background-color: #0b7aa7;
   border: none;
-  z-index: 0;
+  z-index: 1;
   color: rgb(254, 254, 255);
   padding: 4px 10px;
   text-align: center;
@@ -540,7 +541,44 @@ video {
   height: auto;
   border: 7px;
   font-size: 120%;
-  transition-duration: 0.5s;
+  transition-duration: 20s;
   width: auto;
   border-radius: 40px;
+}
+
+.snow, .snow:before, .snow:after {
+  position: absolute;
+  top: -300px;
+  left: 0;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  background-image: radial-gradient(3px 3px at 50px 233px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 462px 577px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 89px 109px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 424px 361px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 215px 111px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 202px 554px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0));
+  background-size: 600px 600px;
+  animation: snow 5s linear infinite;
+  content: "";
+}
+
+.snow:after {
+  margin-left: -200px;
+  opacity: 0.4;
+  z-index: -1;
+  animation-duration: 15s;
+  animation-direction: reverse;
+  filter: blur(3px);
+}
+
+.snow:before {
+  animation-duration: 40s;
+  animation-direction: reverse;
+  margin-left: -300px;
+  z-index: -1;
+  opacity: 0.65;
+  filter: blur(1.5px);
+}
+
+@keyframes snow {
+  to {
+    transform: translateY(600px);
+  }
 }
