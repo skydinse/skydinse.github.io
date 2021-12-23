@@ -8,7 +8,7 @@ function platz3() {
   copyText.select();
   copyText.setSelectionRange(0, 99999); 
   navigator.clipboard.writeText(copyText.value);
-  alert("Befehl kopiert: " + copyText.value);
+  alert("Dein Code: " + copyText.value);
   window.open(
     "https://skydinse.github.io/else/won.html", "_blank");
 }
@@ -18,7 +18,7 @@ function platz2() {
   copyText.select();
   copyText.setSelectionRange(0, 99999); 
   navigator.clipboard.writeText(copyText.value);
-  alert("Befehl kopiert: " + copyText.value);
+  alert("Dein Code: " + copyText.value);
   window.open(
     "https://skydinse.github.io/else/won.html", "_blank");
 }
@@ -28,7 +28,7 @@ function platz1() {
   copyText.select();
   copyText.setSelectionRange(0, 99999); 
   navigator.clipboard.writeText(copyText.value);
-  alert("Befehl kopiert: " + copyText.value);
+  alert("Dein Code: " + copyText.value);
   window.open(
     "https://skydinse.github.io/else/won.html", "_blank");
 }
