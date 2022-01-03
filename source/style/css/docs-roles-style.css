@@ -13,7 +13,7 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background: rgb(141,233,233);
+  background: rgb(247, 199, 43);
   background: linear-gradient(90deg, rgba(141,233,233,1) 0%, rgba(48,170,75,1) 51%, rgba(0,255,70,1) 100%);
   background-size: cover;
   background-position: center;
@@ -31,7 +31,7 @@ img {
   font-family: monospace;
   font-size: 30px;
   border-radius: 35px;
-  background-color: #b4d0f510;
+  background-color: #93969965;
   transition-duration: 0.6s;
   display: block; 
   margin-left: auto; 
@@ -40,7 +40,7 @@ img {
 }
 img:hover {
   border-radius: 20px;
-  background-color: #b4d0f51e;
+  background-color: #7f838691;
   transition-duration: 0.6s;
   width: 62%;
 }
@@ -79,11 +79,12 @@ hr {
 button {
   position: relative;
   vertical-align: middle;
-  background-color: #40a9da71;
+  background-color: rgba(255, 255, 0, 0.637);
   border: none;
   z-index: 0;
-  color: rgb(247, 247, 247);
+  color: rgb(44, 43, 43);
   padding: 3px 9px;
+  z-index: 1;
   text-align: center;
   border-radius: 6px;
   border: 0px;
@@ -96,7 +97,7 @@ button {
   transition-duration: 0.6s;
 }
 button:hover {
-  background-color: rgba(45, 106, 134, 0.369);
+  background-color: rgba(153, 153, 4, 0.863);
   padding: 4px 10px;
   font-size: 14px;
 }
@@ -144,7 +145,7 @@ p {
   flex-direction: column;
   border-radius: 20px;
   box-shadow: 0px 0px 16px #000;
-  background-color: #1b1b1b79;
+  background-color: #161616c2;
 }
 .content-wrapper {
   margin: 0px 2.4%;
@@ -154,10 +155,16 @@ p {
 }
 
 .content-wrapper a {
-  color: #69a;
+  color: rgb(202, 182, 93);
+}
+.content-wrapper a:hover {
+  color: rgb(187, 157, 25);
 }
 .footer a {
-  color: #32b;
+  color: rgb(202, 182, 93);
+}
+.footer a:hover {
+  color: rgb(187, 157, 25);
 }
 
 a {
@@ -178,12 +185,12 @@ a:hover {
 
 @media (min-width: 1200px) {
   body {
-      background-image: url('https://raw.githubusercontent.com/lane-site/lane-site.github.io/main/main-background.png');
+      background-image: url('https://raw.githubusercontent.com/lane-site/lane-site.github.io/main/main-background-skydinse.png');
   }
 }
 @media (max-width: 1200px) {
   body {
-      background-image: url('https://raw.githubusercontent.com/lane-site/lane-site.github.io/main/main-background.png');
+      background-image: url('https://raw.githubusercontent.com/lane-site/lane-site.github.io/main/main-background-skydinse.png');
   }
 }
 
@@ -219,11 +226,11 @@ a:hover {
 
 .button {
   position: relative;
-  vertical-align: middle;
-  background-color: #0b7aa7;
+  vertical-align: middle;  
+  background-color: rgba(255, 217, 0, 0.692);
   border: none;
-  z-index: 0;
-  color: rgb(254, 254, 255);
+  z-index: 1;
+  color: rgb(53, 52, 52);
   padding: 4px 10px;
   text-align: center;
   border-radius: 5px;
@@ -234,24 +241,24 @@ a:hover {
   margin: 4px 2px;
   cursor: pointer;
   -webkit-transition-duration: 0.6s; 
-  transition-duration: 0.6s;   
+  transition-duration: 0.6s;
   margin: 0;
   top: auto;
-  left: auto;    
+  left: auto;
 }
 .button:hover {
   position: relative;
   vertical-align: middle;
-  background-color: #256b99;
+  background-color: rgba(172, 169, 9, 0.863);
   border: none;
-  color: rgb(255, 255, 255);
-  padding: 6px 18px;
+  color: rgb(44, 44, 44);
+  padding: 6px 15px;
   text-align: center;
   border-radius: 8px;
   text-decoration: none;
   z-index: 0;
   display: inline-block;
-  font-size: 15px;
+  font-size: 13.5px;
   margin: 4px 2px;
   cursor: pointer;
   -webkit-transition-duration: 0.6s; 
@@ -260,6 +267,45 @@ a:hover {
   margin: 0;
   top: auto;
   left: auto;
+}
+
+.button-event {
+  position: relative;
+  vertical-align: middle;
+  background-color: #b41919;
+  border: none;
+  z-index: 0;
+  color: rgb(254, 254, 255);
+  padding: 4px 10px;
+  text-align: center;
+  border-radius: 5px;
+  border: 0px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.6s; 
+  transition-duration: 0.6s;       
+}
+.button-event:hover {
+  position: relative;
+  vertical-align: middle;
+  background-color: #720a0a;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 6px 15px;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  z-index: 0;
+  display: inline-block;
+  font-size: 19px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.6s; 
+  transition-duration: 0.6s;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .pages-list {
@@ -291,18 +337,17 @@ a:hover {
   position: fixed;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
   bottom: 0;
   font-size: 18px;
   text-align: center;
   padding: 1rem 2rem;
   background: #34637e;
-  transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 10s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .cookie-box--hide {
   opacity: 0;
   bottom: -100%;
-  z-index: 2;
 }
 .cookie-box-link {
   text-decoration: underline;
@@ -320,7 +365,7 @@ a:hover {
   border-radius:10px 25%;
   transition-duration: 1.4s;
   font-size: 0.75rem;
-  z-index: 3;
+  z-index: 4;
   letter-spacing: 1px;
   background-image: linear-gradient(62deg, #d2edf5 0%, #22c7d3 100%);
   text-decoration: none;
@@ -339,7 +384,7 @@ a:hover {
   cursor: pointer;
   border-radius:10px 25%;
   padding: 0.85rem 1.05rem;
-  z-index: 3;
+  z-index: 4;
   margin-left: 0.45rem;
   color: #000;
   transition-duration: 1.4s;
@@ -440,21 +485,21 @@ a:hover {
 
 
 .collapsible {
-  background-color: rgba(91, 167, 218, 0.37);
-  color: white;
+  background-color: rgba(255, 255, 0, 0.438);
+  color: rgb(41, 40, 40);
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 17px;
+  font-size: 16px;
   transition-duration: 0.5s;
 }
 
 .collapsible:hover {
-  background-color: rgba(91, 167, 218, 0.63);
-  color: white;
+  background-color: rgb(255, 255, 0);
+  color: rgb(97, 94, 94);
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -462,36 +507,30 @@ a:hover {
   transition-duration: 0.5s;
   text-align: left;
   outline: none;
-  font-size: 19px;
+  font-size: 15px;
 }
 
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  font-size: 12px;
-  overflow: hidden;
-  border-radius: 10%;
-  transition: max-height 0.2s ease-out;
-  transition-duration: 0.35s;
-  background-color: #b4d0f510;
+.dark {
+  background-color: rgba(238, 155, 0, 0.712);
 }
 
-.content:hover {
-  border-radius: 15%;
-  background-color: #b4d0f51e;
+.tt {
+  height: 2000px;
+  background-color: white;
 }
 
+.red {
+  background-color: rgba(204, 26, 26, 0.568);
+}
 
-
-.active {
-  background-color: rgba(255, 255, 255, 0.37);
+.active, .collapsible:hover, .dark:hover {
+  background-color: rgba(196, 196, 22, 0.733);
   transition-duration: 0.5s;
   font-size: 18px;
 }
 
 .active:hover {
-  background-color: rgba(116, 116, 116, 0.514);
+  background-color: rgba(230, 230, 102, 0.623);
   transition-duration: 0.5s;
 }
 
@@ -506,4 +545,127 @@ a:hover {
 
 .active:after {
   content: "\2212";
+}
+
+video {
+  border-radius: 30px;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  font-size: 12px;
+  overflow: hidden;
+  border-radius: 7%;
+  transition: max-height 0.2s ease-out;
+  transition-duration: 0.35s;
+  background-color: #5e5f612f;
+}
+
+.content:hover {
+  border-radius: 9%;
+  background-color: #7f848a2c;
+}
+
+.content-tt {
+  padding: 0 18px;
+  max-height: 0;
+  font-size: 12px;
+  overflow: hidden;
+  border-radius: 7%;
+  transition: max-height 0.2s ease-out;
+  transition-duration: 0.35s;
+  background-color: white;
+}
+
+.content-tt:hover {
+  border-radius: 9%;
+  background-color: white;
+}
+
+.info-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 7%;
+  right: 7%;
+  width: 86%;
+  padding: 6px 15px;
+  display: flex;
+  z-index: 2;
+  height: 5%;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(rgba(177, 26, 26, 0.918), rgba(216, 23, 23, 0.918));
+  border-radius: 55px;
+  transition-duration: 0.3s;
+}
+
+.info-banner:hover {
+  left: 5%;
+  right: 5%;
+  height: 7;
+  width: 90%;
+  padding: 5px 14px;
+  background: linear-gradient(rgba(177, 26, 26), rgba(216, 23, 23));
+  border-radius: 60px;
+  transition-duration: 0.3s;
+}
+
+.info-banner-close {
+  height: auto;
+  border: 5px;
+  z-index: 1;
+  background-color: rgb(136, 10, 10);
+  font-size: 100%;
+  color: white;
+  width: auto;
+  border-radius: 20px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.info-banner-close:hover {
+  height: auto;
+  border: 7px;
+  font-size: 120%;
+  transition-duration: 20s;
+  width: auto;
+  border-radius: 40px;
+}
+
+.snow, .snow:before, .snow:after {
+  position: absolute;
+  top: -300px;
+  left: 0;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  background-image: radial-gradient(3px 3px at 50px 233px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 462px 577px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 89px 109px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 424px 361px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 215px 111px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 202px 554px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0));
+  background-size: 600px 600px;
+  animation: snow 5s linear infinite;
+  content: "";
+}
+
+.snow:after {
+  margin-left: -200px;
+  opacity: 0.4;
+  z-index: -1;
+  animation-duration: 15s;
+  animation-direction: reverse;
+  filter: blur(3px);
+}
+
+.snow:before {
+  animation-duration: 40s;
+  animation-direction: reverse;
+  margin-left: -300px;
+  z-index: -1;
+  opacity: 0.65;
+  filter: blur(1.5px);
+}
+
+@keyframes snow {
+  to {
+    transform: translateY(600px);
+  }
 }
