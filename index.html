@@ -2,11 +2,11 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="2; url='https://bit.ly/3y9xYYJ'" />
+  <meta http-equiv="refresh" content="2; url='./home.html'" />
   <title>Skydinse.de - Home</title>
   <link rel="icon" href="./source/style/icon/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0000FF">
+  <meta name="theme-color" content="#f7c72b">
   <meta content="Skydinse.de" property="og:title">
   <meta name="twitter:title" content="Skydinse.de">
   <meta name="twitter:description" content="Dies ist die offizielle Webseite des Minecraft-Servers Skydinse.de">
@@ -26,7 +26,14 @@
 	  margin: 0;
 	  padding: 0;
       text-align: center;
-      color: #5e79c9;
+      color: #dad733;
+	}
+	hr {
+	  height: 5px;
+	  border: white;
+	  border-radius: 200px;
+	  color:white;
+	  background-color:white;
 	}
 	body {
 	  padding: 0;
@@ -37,7 +44,7 @@
 	  font-family: Roboto;
 	}
 	.loading-page {
-	  background-image: url(https://raw.githubusercontent.com/lane-site/lane-site.github.io/main/main-background.png);
+	  background-image: url(https://raw.githubusercontent.com/lane-site/lane-site.github.io/main/main-background-skydinse-loading.png);
 	  width: 100vw;
 	  height: 100vh;
 	  display: flex;
@@ -76,19 +83,25 @@
 	  overflow: hidden;
 	  color: #3f3fbd;
 	}
+	.object {
+		color: grey;
+		height: 100%;
+		width: 100%;
+	}
   </style>
 </head>
   
 <body>
-
 <div class="loading-page">
-  <div class="numerator">
-    <h2>Loading...</h2>
-    <h1>0%</h1>
-    <hr/>
-  </div>
+<div class="numerator">
+	<div class="object">
+	<h2>⠀⠀Loading...⠀⠀</h2>
+	<h1>0%</h1>
+	<hr/>
+	</div>
 </div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script src="./source/script/js/main/loading-animation.js"></script>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script src="./source/script/js/main/loading-animation.js"></script>
 
 </body>
 </html>
