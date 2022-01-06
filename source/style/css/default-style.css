@@ -19,6 +19,17 @@ body {
   background-position: center;
 }
 
+.greybox {
+  border: none;
+  padding: 2px 2px;
+  border-radius: 8px;
+  background-color: rgba(54, 54, 53, 0.801);
+  border: 0px;
+  font-size: 17px;
+  font-family: monospace;
+  margin: 2.5px 0.85px;
+}
+
 .coming-soon-text {
   text-align: center;
   font-style: oblique;
