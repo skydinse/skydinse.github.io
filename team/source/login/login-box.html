@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Form Validation</title>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+  <link rel='stylesheet' href='../source/style/css/default-style.css'>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Raleway');
+    * {
+        font-family: Raleway;
+    }
+    html {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        font-size: 16px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        align-items: center;
+        background-color: #2e2d2da2;
+    }
+
+    .error {
+        color: rgb(209, 69, 69);
+    }
+
+    input {
+      font-size: 15px;
+    }
+
+    button {
+      font-size: 14px;
+      background-color: rgba(236, 222, 14, 0.753);
+      border-radius: 10px;
+      transition-duration: 0.45s;
+      object-position: right;
+    }
+    button:hover {
+      font-size: 15.6px;
+      background-color: rgba(202, 159, 16, 0.911);
+      border-radius: 5px;
+      transition-duration: 0.45s;
+    }
+  </style>
+
+</head>
+<body>
+<div id="error" class="error"></div>
+<form id="form" method="GET">
+  <hr style="color: rgba(255, 255, 255, 0);">
+  <div>
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text">
+  </div>
+  <div>
+    <label for="password">Passwort</label>
+    <input id="password" name="password" type="password">
+  </div>
+  <hr style="color: rgba(255, 255, 255, 0);">
+  <button type="submit">Bestätigen</button>
+  <hr style="color: rgba(255, 255, 255, 0);">
+</form>
+  <script  src="./login-script.js"></script>
+
+</body>
+</html>
