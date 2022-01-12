@@ -25,6 +25,7 @@
 
     .error {
         color: rgb(209, 69, 69);
+        text-align: center;
     }
 
     input {
@@ -44,26 +45,35 @@
       border-radius: 5px;
       transition-duration: 0.45s;
     }
+
+    .CENTER-IT {
+      margin: auto;
+      width: 100%;
+      border: 3px solid rgba(254, 255, 254, 0);
+      padding: 10px;
+    }
   </style>
 
 </head>
-<body>
-<div id="error" class="error"></div>
-<form id="form" method="GET">
-  <hr style="color: rgba(255, 255, 255, 0);">
-  <div>
-    <label for="name">Name</label>
-    <input id="name" name="name" type="text">
+<body style="align-items: center;">
+<div class="CENTER-IT">
+  <div id="error" class="error"></div>
+  <form id="form" method="GET">
+    <hr style="color: rgba(255, 255, 255, 0);">
+    <div>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text">
+    </div>
+    <div>
+      <label for="password">Passwort</label>
+      <input id="password" name="password" type="password">
+    </div>
+    <hr style="color: rgba(255, 255, 255, 0);">
+    <button type="submit">Bestätigen</button>
+    <hr style="color: rgba(255, 255, 255, 0);">
+  </form>
+    <script  src="./login-script.js"></script>
   </div>
-  <div>
-    <label for="password">Passwort</label>
-    <input id="password" name="password" type="password">
-  </div>
-  <hr style="color: rgba(255, 255, 255, 0);">
-  <button type="submit">Bestätigen</button>
-  <hr style="color: rgba(255, 255, 255, 0);">
-</form>
-  <script  src="./login-script.js"></script>
 
 </body>
 </html>
