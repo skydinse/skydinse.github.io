@@ -7,3 +7,6 @@ function roles_docs() {
 function games_docs() {
   location.replace("./ingame/games.html ")
 }
+function cb_docs() {
+  location.replace("./ingame/citybuild.html ")
+}

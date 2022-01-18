@@ -31,9 +31,6 @@
   function link() {
     location.replace("./forum/index.html ")
   }
-  function citybuild() {
-    location.replace("./else/citybuild.html")
-  }
   function eventbtn() {
     location.replace("./docs/ingame/events.html")
   }
