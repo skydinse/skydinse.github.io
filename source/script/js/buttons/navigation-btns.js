@@ -29,7 +29,7 @@
     location.replace("./docs/docs.html ")
   }
   function link() {
-    location.replace("./docs/about/links.html ")
+    location.replace("./forum/index.html ")
   }
   function citybuild() {
     location.replace("./else/citybuild.html")

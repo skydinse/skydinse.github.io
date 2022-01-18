@@ -24,7 +24,7 @@
     location.replace("../../docs/docs.html ")
   }
   function link() {
-    location.replace("../../docs/about/links.html ")
+    location.replace("../../forum/index.html ")
   }
   function eventbtn() {
     location.replace("../../docs/ingame/events.html")
