@@ -6,7 +6,7 @@ const errorElement = document.getElementById('error')
 form.addEventListener('submit', (e) => {
   let messages = []
   
-  if (password.value === 'n3eNW') {
+  if (password.value === 'forumm') {
     messages.push('Code akzeptiert! Weiterleitung erfolgt...')
     location.replace("https://skydinse-forum.de/")
   }
