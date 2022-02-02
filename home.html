@@ -25,20 +25,17 @@
 
 <!-- Buttons start -->
 <div class="btn">
-<p><em><button class="button" onclick="discord();">DISCORD </button>
-<em><button class="button" onclick="link();">FORUM</button></em>
-<em><button class="button" onclick="docs();">DOCS</button></em>
+<p><em><button class="button" onclick="discord();"><em style="font-size: 1.2px;">⠀</em>DISCORD<em style="font-size: 1.2px;">⠀</em></button></em>
+  <em><button class="button" onclick="faq();"><em style="font-size: 1.2px;">⠀</em>HILFE<em style="font-size: 1.2px;">⠀</em></button></em>
 <em><button class="button" onclick="home();">STARTSEITE</button></em>
-<em><button class="button" onclick="faq();">FAQ</button></em>
-<em><button class="button" onclick="support();">SUPPORT</button></em>
-<em><button class="button" onclick="contact();">KONTAKT</button></em></p>
-</div> 
-
+<em><button class="button" onclick="link();">FORUM</button></em>
+<em><button class="button" onclick="contact();">KONTAKT</button></em>
+</div>
 <em><button class="button-event" onclick="link();">FORUM <em style="font-weight: bold; color: rgb(230, 195, 1);">NEU!</em></button></em></p>
-
 <script src="./source/script/js/buttons/navigation-btns.js"></script>
 </script>
 <!-- Buttons end -->
+
 
 <!-- Cookie Box start -->  
 <div id="js-cookie-box" class="cookie-box cookie-box--hide">
@@ -49,60 +46,29 @@
 
 <!-- Info Box start -->
 <div class="info-banner" style="width: auto;">
-  <p style="color: white; font-size: 15px; font-family: monospace;">Mineattack Ⅱ!<em> <button class="button" onclick="info();"><div style="font-size: 15px;">Mehr Lesen</div></button></em></p>
+  <p style="color: white; font-size: 15px; font-family: monospace; font-weight: bold;">neues FORUM!<em> <button class="button" onclick="read_more();"><div style="font-size: 15px;">Mehr Lesen</div></button></em></p>
   <button class="info-banner-close">&times;</button>
 </div>
-<script src='./source/script/js/main/info-banner.js'></script><script>$(".info-banner").delay(500).fadeIn();$('.info-banner-close').click(function(e) {$('.info-banner').fadeOut(); });</script>
+<script src='./source/script/js/main/info-banner.js'></script><script>$(".info-banner").delay(500).fadeIn();$('.info-banner-close').click(function(e) {$('.info-banner').fadeOut(); }); function read_more() {window.open("https://skydinse-forum.de/", "_blank");}</script>
 <!-- Info Box end -->
 
 <div class="main-wrapper">
   <div class="content-wrapper">
     <h1>Skydinse.de<br />Offizielle Webseite</h1>
-    <div class="middle">
-      Willkommen auf der offiziellen Webseite des Skydinse.de Netzwerkes!
-      <!--
-      Hör dir doch die Weihnachtsmusik aus unserer Lobby an:<br />
-      <audio controls>
-        <source src="./source/media/songs/Skydinse-Lobby-Sounds.mp3" type="audio/mpeg">
-        Dein Browser unterstützt dieses Audio-Element leider nicht.
-      </audio> 
-      -->
-      ⠀
-    </div>
     <hr>
-    <button class="collapsible dark">&#187; Kommentar-Sektion</button>
-      <div class="content">
-        <h2 style="text-align: center;">Kommentare</h2><br />
+    <button class="collapsible dark">&#187; Forum-Schnellzugriff</button>
+      <div class="content" style="height: auto;">
+        <h2 style="text-align: center;">Forum</h2>
         
-        <div><object style="width: 100%; height: 800px;" data="./comments/home-comments.html"></object></div>
+        <p style="text-align: center;">Hier kannst du schnell auf das Forum zugreifen, ohne extra die Seite wechseln zu müssen!</p><div><object style="width: 100%; height: 800px; border-radius: 26px;" data="https://skydinse-forum.de/"></object></div>
         
       </div>
-
-    <hr>
-    <button class="collapsible">&#187; TikToks (NICHT MEHR AKTUELL!)</button>
+      <p style="font-size: 2px;">⠀</p>
+    <button class="collapsible">&#187; Kommentar-Sektion</button>
       <div class="content">
-        <h2 style="text-align: center;">Neueste TikToks</h2><p style="font-size: 13px; text-align: center;">Zuletzt aktualisiert: 23.12.2021; 22:42</p>⠀<br />
-
-        <div style="text-align: center;">
-          <video width="299" height="530" controls>
-            <source src="./source/media/video/tiktok/tiktok1.mp4" type="video/mp4">
-          Dein Browser unterstützt dieses Video-Format leider nicht. :(
-          </video> 
-          <p>TikTok von: <a href="https://www.tiktok.com/@skydinse_de" target="content">skydinse_de</a></p><br />
-          <hr>⠀<br />⠀<br />
-          <video width="299" height="530" controls>
-            <source src="./source/media/video/tiktok/tiktok2.mp4" type="video/mp4">
-          Dein Browser unterstützt dieses Video-Format leider nicht. :(
-          </video> 
-          <p>TikTok von: <a href="https://www.tiktok.com/@skydinse.mc" target="content">skydinse.mc</a></p><br />
-          <hr>⠀<br />⠀<br />
-          <!--<video width="299" height="530" controls>
-            <source src="./source/media/video/tiktok/tiktok2.mp4" type="video/mp4">
-          Dein Browser unterstützt dieses Video-Format leider nicht. :(
-          </video>--><h2>Coming Soon!</h2>
-          <p>TikTok von: <a href="https://www.tiktok.com/@lane.tiktok_" target="content">lane.tiktok_</a></p><br />
-
-        </div>
+        <h2 style="text-align: center;">Kommentare</h2>
+        
+        <div><object style="width: 100%; height: 800px;" data="./comments/home-comments.html"></object></div>
         
       </div>
     <script src="./source/script/js/main/collapsible.js"></script> 
@@ -117,19 +83,13 @@
       <script src="./source/script/js/copy/copy-ip.js"></script>
       ⠀
     <hr>
+    <div style="text-align: center; font-weight: bold;">
+      Wir haben auch ein Forum, in dem du alles mögliche bezüglich des servers posten kannst! <button style="font-size: 16px; background-color: rgba(255, 255, 0, 0.692);" class="button" onclick="link();">-> zum FORUM</button>
+    </div>
+    <hr>
     <div style="text-align: center">
       Falls du irgendwelche Fragen hast schau doch gerne in unserem FAQ vorbei! <button style="font-size: 16px; background-color: rgba(255, 255, 0, 0.692);" class="button" onclick="faq();">-> zum FAQ</button>
     </div>
-    <hr>
-    <div style="text-align: center">
-      Eine Liste unserer aktuellen Events gibt es natürlich auch! <button style="font-size: 16px; background-color: rgba(255, 255, 0, 0.692);;" class="button" onclick="eventbtn();">-> zu den Events</button>
-    </div>
-    <hr>
-    ⠀
-    <h2>Aktuelles:</h2> <!--maximal 5 einträge bitte-->
-      <p><em>- 03.01. 15:00; Das neue Website-Design ist jetzt schon halbwegs fertig!</em></p>
-      <p><em>- 03.01. 14:43; Mineattack Ⅱ startet am 08.01.2021! <a href="./else/info.html" target="content">HIER</a> kannst du mehr dazu nachlesen!</em></p>
-    ⠀
     <hr>
     ⠀
     <h2>Über den Server:</h2>
