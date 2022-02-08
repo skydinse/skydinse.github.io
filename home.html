@@ -55,6 +55,33 @@
 <div class="main-wrapper">
   <div class="content-wrapper">
     <h1>Skydinse.de<br />Offizielle Webseite</h1>
+    
+    <!-- playercounter START -->
+    <style>
+      .playercounter {
+        background-color: rgb(49, 49, 49);
+        width: auto;
+        font-family: Courier;
+        font-size: 21.5px;
+        border: 7px solid rgb(49, 49, 49);
+        border-radius: 25px;
+      }
+      .playercounter-div {
+        text-align: center;
+        position: center;
+        width: 100%;
+      }
+      .playercounter-btn {
+        font-size: 22.3px;
+      }
+      .playercounter-btn:hover {
+        font-size: 24px;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+    <div class="playercounter-div"><em class="playercounter">Spiele jetzt mit <em style="color: orange;"><span data-playercounter-ip="skydinse.de" style="font-size: 22.3px;">0</span></em> anderen Spielern auf <em style="color: orange; font-size: 22.3px;"><input type="text" value="skydinse.de" id="java_ip"><button onclick="javaIP()" class="playercounter-btn" style="color: orange; background-color: rgba(255, 255, 255, 0); font-family: Courier; padding: 0px 0px; vertical-align: baseline;">skydinse.de</button></em>!</em></div>
+    <!-- playercounter END -->
+
     <hr>
     <button class="collapsible dark">&#187; Forum-Schnellzugriff</button>
       <div class="content" style="height: auto;">
@@ -74,7 +101,7 @@
     <script src="./source/script/js/main/collapsible.js"></script> 
     <hr>
     ⠀
-    
+  
     <h2>Server-IP:</h2>
       Java-IP: <input type="text" value="skydinse.de" id="java_ip"> skydinse.de <button onclick="javaIP()">Java-IP Kopieren</button><br />
       <br />
